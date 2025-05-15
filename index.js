@@ -135,6 +135,6 @@ app.use("/api", event);
 app.use("/api", scheduleServiceRouter);
 
 //in which port server start
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, '0.0.0.0', () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
