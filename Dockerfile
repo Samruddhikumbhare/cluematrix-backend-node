@@ -10,11 +10,14 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
+# Copy all application files
 COPY . .
 
-# Expose port 5500
+# Set environment variable if not using .env directly
+# ENV PORT=5500
+
+# Expose port
 EXPOSE 5500
 
-# Start the app using nodemon
+# Start the app (ensure this works with npm start)
 CMD ["npm", "start"]
