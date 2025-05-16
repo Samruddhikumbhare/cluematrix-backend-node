@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Set environment variable if not using .env directly
-# ENV PORT=5500
+ENV PORT=5500
 
 # Expose port
 EXPOSE 5500
