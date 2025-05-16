@@ -20,4 +20,4 @@ ENV PORT=5500
 EXPOSE 5500
 
 # Start the app (ensure this works with npm start)
-CMD ["node", "start"]
+CMD ["npm", "start"]
